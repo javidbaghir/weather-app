@@ -1,0 +1,53 @@
+.main {
+    @apply text-center mx-auto w-[90%] max-w-[470px] rounded-[20px] p-[20px] mt-[60px];
+    background: linear-gradient(135deg, #00feba, #5b548a)
+    
+}
+
+.card {
+    @apply flex justify-center  items-center gap-[20px]
+}
+
+.search-input {
+    @apply rounded-[30px] bg-[#ebfffc] text-[#555] text-[18px] mr-[16px] py-[10px] px-[25px] outline-none border-none flex-1 h-[60px]
+}
+
+.btn {
+   @apply bg-white size-[60px] rounded-full text-[20px]
+}
+
+.photo {
+    @apply size-[170px]
+}
+
+.weather {
+    @apply mt-[30px] text-white hidden
+}
+
+.temp {
+    @apply font-bold text-[80px]
+}
+
+.city {
+    @apply font-[400] text-[45px] mt-[-10px]
+}
+
+.details {
+    @apply flex items-center justify-between mt-[50px] px-[20px]
+}
+
+.col {
+    @apply flex items-center gap-[10px] text-left
+}
+
+.photo-btm i {
+    @apply text-[40px]
+}
+
+.humidity, .wind {
+    @apply text-[28px] 
+}
+
+.error {
+    @apply text-red-500 text-[18px] font-bold
+}

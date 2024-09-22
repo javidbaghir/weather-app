@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link href="./assets/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#333333]">
+    <div class="main">
+      <div class="card">
+        <input
+          class="search-input"
+          spellcheck="false"
+          type="text"
+          placeholder="Enter a city"
+        />
+        <button class="btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="mt-[20px]">
+        <p class="error-msg"></p>
+      </div>
+      <div class="weather">
+        <div class="flex flex-col items-center justify-center">
+          <figure class="photo">
+            <img
+              class="object-cover size-full weather-photo"
+            />
+          </figure>
+          <h1 class="temp"></h1>
+          <h2 class="city"></h2>
+        </div>
+
+        <div class="details">
+            <div class="col">
+                <figure class="photo-btm">
+                    <i class="fa-solid fa-water"></i>
+                </figure>
+
+                <div>
+                    <p class="humidity"></p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <figure class="photo-btm">
+                    <i class="fa-solid fa-wind"></i>
+                </figure>
+
+                <div>
+                    <p class="wind"></p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
