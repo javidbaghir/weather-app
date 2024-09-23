@@ -24,6 +24,8 @@ async function checkWheather(city) {
     } else {
 
         let data = await response.json();
+        console.log(data);
+        
 
         wind.innerHTML = data.wind.speed + " km/h"
         cityName.innerHTML = data.name;
@@ -39,7 +41,7 @@ async function checkWheather(city) {
         } else if (data.weather[0].main == 'Mist') {
             weatherPhoto.src = "https://png.pngtree.com/png-vector/20220621/ourmid/pngtree-daytime-foggy-weather-clouds-illustration-png-image_5246770.png"
         } else if (data.weather[0].main == 'Rain') {
-            weatherPhoto.src = "https://png.pngtree.com/png-vector/20220621/ourmid/pngtree-daytime-foggy-weather-clouds-illustration-png-image_5246770.pnghttps://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather07-512.png"
+            weatherPhoto.src = "https://cdn-icons-png.flaticon.com/512/4235/4235322.png"
         }  else if (data.weather[0].main == 'Snow') {
             weatherPhoto.src = "https://static.vecteezy.com/system/resources/thumbnails/012/806/416/small_2x/3d-cartoon-weather-icon-snow-clouds-and-snowflakes-sign-isolated-on-transparent-background-3d-render-illustration-png.png"
         }
